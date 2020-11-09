@@ -11,3 +11,4 @@ RSpec.describe SystemRequirement, type: :model do
 
   it { is_expected.to have_many(:games).dependent(:restrict_with_error) }
 end
+

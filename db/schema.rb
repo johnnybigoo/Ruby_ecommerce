@@ -10,17 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2020_11_09_024746) do
-=======
 ActiveRecord::Schema.define(version: 2020_11_17_032844) do
->>>>>>> 56aa1d0 (Ajustes semana 3)
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-=======
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -42,7 +36,6 @@ ActiveRecord::Schema.define(version: 2020_11_17_032844) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
->>>>>>> 56aa1d0 (Ajustes semana 3)
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -125,10 +118,7 @@ ActiveRecord::Schema.define(version: 2020_11_17_032844) do
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
-<<<<<<< HEAD
-=======
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
->>>>>>> 56aa1d0 (Ajustes semana 3)
   add_foreign_key "games", "system_requirements"
   add_foreign_key "product_categories", "categories"
   add_foreign_key "product_categories", "products"

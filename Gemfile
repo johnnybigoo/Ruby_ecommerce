@@ -1,11 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-<<<<<<< HEAD
-ruby  '~> 2.7.2'
-=======
-ruby  '~> 2.7.1' #'~> 2.7.2'
->>>>>>> 56aa1d0 (Ajustes semana 3)
+ruby '~> 2.7.1' #'~> 2.7.2'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 

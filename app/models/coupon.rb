@@ -1,4 +1,7 @@
 class Coupon < ApplicationRecord
+  include NameSearchable
+  include Paginatable
+
   validates :name, presence: true
   validates :code, presence: true, uniqueness: { case_sensitive: false }
   validates :status, presence: true
@@ -7,7 +10,4 @@ class Coupon < ApplicationRecord
   validates :due_date, presence: true
 
   enum status: { active:1,  inactive: 2 }
-
-  include NameSearchable
-  include Paginatable
 end

@@ -34,7 +34,7 @@ RSpec.describe "Admin V1 Products as :admin", type: :request do
 
     context "with search[name] param" do
       let!(:search_name_products) do
-        products = []
+      products = []
         15.times { |n| products << create(:product, name: "Search #{n + 1}") }
         products
       end
